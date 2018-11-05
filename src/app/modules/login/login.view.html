@@ -1,1 +1,15 @@
-Login
+<div class="loginContent">
+    <div class="loginCentral">
+        <form class="loginForm">
+            <mat-form-field>
+                <input matInput [(ngModel)]="user.email" id="emailInput" name="emailInput" placeholder="email" type="email" required>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput [(ngModel)]="user.password" id="passwordInput" name="passwordInput" placeholder="password" type="password" required>
+            </mat-form-field>
+        </form>
+        <button class="signInBtn">
+            Sign In
+		</button>
+    </div>
+</div>
