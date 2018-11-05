@@ -9,3 +9,6 @@ body {
 * {
     outline: none;
 }
+button {
+	cursor: pointer;
+} 
