@@ -7,6 +7,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { AppRouting } from './app.routing';
 import { LoginComponent } from './modules/login/login.component';
+import * as AppBundle from './app.bundle';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { LoginComponent } from './modules/login/login.component';
     FormsModule,
     MatInputModule,
     MatFormFieldModule,
+    AppBundle.MainModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

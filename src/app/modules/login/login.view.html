@@ -12,7 +12,7 @@
                     <input matInput [(ngModel)]="user.password" class="loginInput" id="passwordInput" name="passwordInput" placeholder="password" type="password" required>
                 </mat-form-field>
             </div>
-            <button class="signInBtn">
+            <button class="signInBtn" (click)="logIn()">
                 Sign In
             </button>
         </form>
