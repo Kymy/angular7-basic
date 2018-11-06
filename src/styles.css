@@ -14,3 +14,13 @@ body {
 button {
 	cursor: pointer;
 }
+.addBtn {
+    height: 49px;
+    width: 190px;
+    border-radius: 100px;
+    background-color: #D91E47;
+    color: white;
+    border-color: transparent;
+    font-size: 15px;
+    margin-top: 20px;
+}
