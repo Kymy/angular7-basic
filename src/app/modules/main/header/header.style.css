@@ -1,0 +1,10 @@
+.headerContent {
+    background-color: #003B5C;
+    color: white;
+    height: 80px;
+    text-align: center;
+    font-size: 30px;
+    display: table-cell;
+    vertical-align: middle;
+    width: 100vw;
+}

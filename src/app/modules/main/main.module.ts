@@ -1,16 +1,19 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MainComponent } from './main.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   imports: [
     BrowserModule,
   ],
   declarations: [
-    MainComponent
+    MainComponent,
+    HeaderComponent
   ],
   exports: [
-    MainComponent
+    MainComponent,
+    HeaderComponent
   ]
 })
 export class MainModule {}
