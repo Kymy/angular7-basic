@@ -15,7 +15,7 @@ export class SideBarComponent {
   constructor( private router: Router ) { }
 
   ngOnInit() {
-    // this.router.navigate(['home/welcome']);
+    this.router.navigate(['home/users']);
     this.detectRouteChanges();
   }
 
