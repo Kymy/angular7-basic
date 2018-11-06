@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MainComponent } from './main.component';
 import { HeaderComponent } from './header/header.component';
+import { SideBarComponent } from './side-bar/side-bar.component';
 
 @NgModule({
   imports: [
@@ -9,11 +10,13 @@ import { HeaderComponent } from './header/header.component';
   ],
   declarations: [
     MainComponent,
-    HeaderComponent
+    HeaderComponent,
+    SideBarComponent,
   ],
   exports: [
     MainComponent,
-    HeaderComponent
+    HeaderComponent,
+    SideBarComponent
   ]
 })
 export class MainModule {}

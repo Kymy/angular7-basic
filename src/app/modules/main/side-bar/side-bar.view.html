@@ -1,0 +1,12 @@
+<div class="navTabs">
+        <div routerLink="users" (click)="setActive('users');" [ngClass]="{'activeTab':  activeTab.value === 'users'}" class="tab">
+            <span class="titleTab">Users</span>
+        </div>
+        <div routerLink="books" (click)="setActive('books');" [ngClass]="{'activeTab':  activeTab.value === 'books'}" class="tab">
+            <span class="titleTab">Books</span> 
+        </div>
+</div>
+<div class="navTabsContent">
+    <!-- <router-outlet></router-outlet> -->
+</div>
+    

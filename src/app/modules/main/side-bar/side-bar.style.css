@@ -1,0 +1,21 @@
+.navTabs {
+    width: 230px;
+    height: 100vh;
+    background-color: #004F7C;
+    color: white;
+}
+.tab {   
+    height: 50px;
+    width: 100%;
+    padding-left: 20px;
+    display: table;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+.titleTab {
+    display: table-cell;
+    vertical-align: middle;
+}
+.activeTab {
+	background-color: #005DAB !important;
+}
