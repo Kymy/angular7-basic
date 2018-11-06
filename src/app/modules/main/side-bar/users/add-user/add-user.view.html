@@ -1,0 +1,32 @@
+<div class="addUserContent">
+    <div class="addUserTitle">Add user</div>
+    <form class="addUserForm" #userForm="ngForm">
+        <div class="loginInput">
+            <mat-form-field>
+                <input matInput [(ngModel)]="user.name" name="nameInput" placeholder="Name" type="text" required #nameInput>
+                <mat-error *ngIf="!nameInput.valid">This field is required</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="loginInput">
+            <mat-form-field>
+                <input matInput [(ngModel)]="user.lastname" name="lastnameInput" placeholder="Lastname" type="text" required #lastnameInput>
+                <mat-error *ngIf="!lastnameInput.valid">This field is required</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="loginInput">
+                <mat-form-field>
+                    <input matInput [(ngModel)]="user.age" name="ageInput" placeholder="Age" type="number" min=0 required #ageInput>
+                    <mat-error *ngIf="!ageInput.valid">This field is required</mat-error>
+                </mat-form-field>
+            </div>
+        <div class="loginInput">
+            <mat-form-field>
+                <input matInput [(ngModel)]="user.email"  email id="emailInput" name="emailInput" placeholder="email" type="email" required #loginEmailInput>
+                <mat-error *ngIf="!loginEmailInput.valid && !loginEmailInput.pristine">This field is required</mat-error>
+            </mat-form-field>
+        </div>
+        <button class="signInBtn" [disabled]="!userForm.form.valid" class="addBtn" (click)="createUser()">
+            CREATE USER
+        </button>
+    </form>
+</div>

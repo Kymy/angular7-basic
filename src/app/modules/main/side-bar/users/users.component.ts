@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material';
+import { AddUserComponent } from './add-user/add-user.component';
 
 @Component({
   selector: 'users',
@@ -17,5 +19,18 @@ export class UsersComponent {
     {name: 'Anne', lastname: 'Hodor', age: 22, email: 'annie@hodor.com'},
     {name: 'Hodor', lastname: 'Hodor', age: 23, email: 'hodor@hodor.com'},
   ];
+
+  constructor(public dialog: MatDialog) {}
+
+  openAddUserDialog() {
+    const dialogRef = this.dialog.open(AddUserComponent, {
+      width: '260px',
+      height: '400px'
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+    });
+  }
 
 }

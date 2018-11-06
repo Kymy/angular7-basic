@@ -4,21 +4,34 @@ import { CommonModule } from '@angular/common';
 import { SideBarComponent } from './side-bar.component';
 import { UsersComponent } from './users/users.component';
 import { BooksComponent } from './books/books.component';
+import { AddUserComponent } from './users/add-user/add-user.component';
+import { MatDialogModule } from '@angular/material';
+import { MatFormFieldModule, MatInputModule } from '@angular/material';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
     RouterModule,
     CommonModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule
   ],
   declarations: [
     SideBarComponent,
     UsersComponent,
-    BooksComponent
+    BooksComponent,
+    AddUserComponent
   ],
   exports: [
     SideBarComponent,
     UsersComponent,
-    BooksComponent
+    BooksComponent,
+    AddUserComponent
+  ],
+  entryComponents: [
+    AddUserComponent,
   ]
 })
 export class SideBarModule {}

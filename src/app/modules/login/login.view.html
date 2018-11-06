@@ -5,7 +5,7 @@
             <div class="loginInput">
                 <mat-form-field>
                     <input matInput [(ngModel)]="user.email"  email id="emailInput" name="emailInput" placeholder="email" type="email" required #loginEmailInput>
-                    <mat-error *ngIf="!loginEmailInput.valid && !loginEmailInput.pristine">This field is required</mat-error>
+                    <mat-error *ngIf="!loginEmailInput.valid">This field is required</mat-error>
                 </mat-form-field>
             </div>
             <div class="loginInput">
