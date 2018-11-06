@@ -7,4 +7,18 @@
             <button class="addBtn">ADD USER</button>
         </div>
     </div>
+    <div class="contentElements">
+        <div class="columns">
+            <div class="titleColumn">Name</div>
+            <div class="titleColumn">Lastname</div>
+            <div class="titleColumn">Age</div>
+            <div class="titleColumn">Email</div>
+        </div>
+        <div class="rows" *ngFor="let user of users">
+            <div class="valueRow">{{user.name}}</div>
+            <div class="valueRow">{{user.lastname}}</div>
+            <div class="valueRow">{{user.age}}</div>
+            <div class="valueRow">{{user.email}}</div>
+        </div>
+    </div>
 </div>

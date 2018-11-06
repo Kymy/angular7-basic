@@ -8,7 +8,7 @@ import { BooksComponent } from './books/books.component';
 @NgModule({
   imports: [
     RouterModule,
-    CommonModule
+    CommonModule,
   ],
   declarations: [
     SideBarComponent,

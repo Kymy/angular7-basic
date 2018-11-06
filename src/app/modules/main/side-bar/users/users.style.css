@@ -1,0 +1,23 @@
+.columns {
+    display: flex;
+    border-bottom: 1px solid #DDDDDD;
+    height: 35px;
+    padding-top: 10px;
+    padding-left: 45px;
+}
+.titleColumn {
+    color: #004F7C;
+    width: 25%;
+}
+.rows {
+    display: flex;
+    padding-top: 10px;
+    padding-left: 45px;
+    height: 40px;
+    border-bottom: 1px solid #DDDDDD;
+    cursor: pointer;
+}
+.valueRow {
+    width: 25%;
+   
+}

@@ -24,7 +24,6 @@ export class SideBarComponent {
   }
 
   detectRouteChanges() {
-    var self = this;
     this.router.events.subscribe((path) => {
       const apath = path['url'];
       if (apath) {
